@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>Play Mancala!</title>
+		<meta name="author" content="Jackson McQuality">
+		<meta name="description" content="Play Mancala Online For Free!">
+		<link type="text/css" rel="stylesheet" href="mancala.css"></link>
+	</head>
+	<body>	
+		
+		<h1><center>Play Mancala Online!</center></h1>		
+		<h3><u>How to Play</u></h3>		
+		
+		<p id="Rules"> 
+		Mancala is a two player player game in which players take turns moving pebbles to try and place more  
+		pebbles in their scoring cup than the other player. When moving pebbles, a player can only move pebbles
+		that are on their side of the board. When moving pebbles from one cup, the player must drop one pebble
+		in each cup along the way to the scoring cup. If the player ends on their scoring cup, they get to take 
+		another turn. Otherwise, it is the other player's turn. When a player clears their side of the board, all 
+		remaining pebbles are placed in the other player's scoring cup. The player with the most pebbles in their 
+		scoring cup wins!
+		</p>		
+		<div id="UI">It is player 1's turn!</div>		
+			</br>			
+		<center>
+			<h3><u>Player 2's Side</u></h3>
+			<div id="mancalaBoard">
+					<div id="cup00"	class="cup"	onclick="movePebbles(board[0][0])">3</div>
+					<div id="cup01"	class="cup"	onclick="movePebbles(board[0][1])">3</div>
+					<div id="cup02"	class="cup"	onclick="movePebbles(board[0][2])">3</div>
+					<div id="cup03"	class="cup"	onclick="movePebbles(board[0][3])">3</div>
+					<div id="cup04"	class="cup"	onclick="movePebbles(board[0][4])">3</div>
+					<div id="cup05"	class="cup" onclick="movePebbles(board[0][5])">3</div>
+				<div id="scoringCup0"	class="scoringCup">0</div>
+					<div id="cup10"	class="cup"	onclick="movePebbles(board[1][0])">3</div>
+					<div id="cup11"	class="cup" onclick="movePebbles(board[1][1])">3</div>
+					<div id="cup12"	class="cup" onclick="movePebbles(board[1][2])">3</div>
+					<div id="cup13"	class="cup" onclick="movePebbles(board[1][3])">3</div>
+					<div id="cup14"	class="cup" onclick="movePebbles(board[1][4])">3</div>
+					<div id="cup15"	class="cup" onclick="movePebbles(board[1][5])">3</div>
+				<div id="scoringCup1"	class="scoringCup">0</div>
+			</div>
+			<h3><u>Player 1's Side</u></h3>	
+		</center>	
+			</br>
+		<button type="button" onclick="newGame()" >New Game</button>
+		<script src="cup.js" type="text/javascript"></script> 
+		<script src="mancala.js" type="text/javascript"></script>  
+		
+	</body>
+</html>
